@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Our Products</h1>
+    <div class="category-buttons">
+      <button onclick="filterProducts('all')">All</button>
+      <button onclick="filterProducts('men')">Men</button>
+      <button onclick="filterProducts('women')">Women</button>
+      <button onclick="filterProducts('kids')">Kids</button>
+    </div>
+    <div class="main">
+        <div class="product"></div>
+        <button class="cart-button">Cart</button>
+      </div>
+      <div class="cart-section">
+        <div class="cart-header">
+          <h2>Cart</h2>
+          <span class="close-cart">&times;</span>
+        </div>
+        <div class="cart-items"></div>
+        <div class="total-amount">Total: 0</div>
+        <button class="buy-button">Buy</button>
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>
